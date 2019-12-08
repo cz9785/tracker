@@ -1,0 +1,10 @@
+<li><a href="/sightings/add/">add new sighting</a></li>
+{% if the_list %}
+    <ul>
+    {% for element in the_list %}
+        <li><a href="/sightings/{{ element.Unique_Squirrel_Id }}/">{{ element.Unique_Squirrel_Id }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No sightings are available.</p>
+{% endif %}
