@@ -1,0 +1,65 @@
+<h3>Add Sightings</h3>
+
+
+
+<form action="{% url 'sightings:add' %}" method="post">
+{% csrf_token %}
+
+<table border="1" >
+    <thead>
+        <tr>
+            <th colspan=2 >Latitude </th>
+            <th colspan=2 >Longitude </th>
+            <th colspan=2 >Unique_Squirrel_Id </th>
+            <th colspan=2 >Shift </th>
+            <th colspan=2 >Date </th>
+            <th colspan=2 >Age </th>
+            <th colspan=2 >Primary_Fur_Color </th>
+            <th colspan=2 >Location </th>
+            <th colspan=2 >Specific_Location </th>
+            <th colspan=2 >Running </th>
+            <th colspan=2 >Chasing </th>
+            <th colspan=2 >Climbing </th>
+            <th colspan=2 >Eating </th>
+            <th colspan=2 >Foraging </th>
+            <th colspan=2 >Other_Activities </th>
+            <th colspan=2 >Kuks </th>
+            <th colspan=2 >Quaas </th>
+            <th colspan=2 >Moans </th>
+            <th colspan=2 >Tail_flags </th>
+            <th colspan=2 >Tail_twitches </th>
+            <th colspan=2 >Approaches </th>
+            <th colspan=2 >Indifferent </th>
+            <th colspan=2 >Runs_from</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan=2 ><input name="Latitude" value=""></input></td>
+            <td colspan=2 ><input name="Longitude" value=""></input></td>
+            <td colspan=2 ><input name="Unique_Squirrel_Id" value=""></input></td>
+            <td colspan=2 ><input name="Shift" value=""></input></td>
+            <td colspan=2 ><input name="Date" value=""></input></td>
+            <td colspan=2 ><input name="Age" value=""></input></td>
+            <td colspan=2 ><input name="Primary_Fur_Color" value=""></input></td>
+            <td colspan=2 ><input name="Location" value=""></input></td>
+            <td colspan=2 ><input name="Specific_Location" value=""></input></td>
+            <td colspan=2 ><input name="Running" value=""></input></td>
+            <td colspan=2 ><input name="Chasing" value=""></input></td>
+            <td colspan=2 ><input name="Climbing" value=""></input></td>
+            <td colspan=2 ><input name="Eating" value=""></input></td>
+            <td colspan=2 ><input name="Foraging" value=""></input></td>
+            <td colspan=2 ><input name="Other_Activities" value=""></input></td>
+            <td colspan=2 ><input name="Kuks" value=""></input></td>
+            <td colspan=2 ><input name="Quaas" value=""></input></td>
+            <td colspan=2 ><input name="Moans" value=""></input></td>
+            <td colspan=2 ><input name="Tail_flags" value=""></input></td>
+            <td colspan=2 ><input name="Tail_twitches" value=""></input></td>
+            <td colspan=2 ><input name="Approaches" value=""></input></td>
+            <td colspan=2 ><input name="Indifferent" value=""></input></td>
+            <td colspan=2 ><input name="Runs_from" value=""></input></td>
+        </tr> 
+    </tbody>
+    
+<input type="submit" value="Add">
+</form>
