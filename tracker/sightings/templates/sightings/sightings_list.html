@@ -4,66 +4,6 @@
     {% for element in the_list %}
         <li><a href="/sightings/{{ element.Unique_Squirrel_Id }}/">{{ element.Unique_Squirrel_Id }}</a></li>
     {% endfor %}
-        
-        
-<form action="{% url 'sightings:update' squirrel.Unique_Squirrel_Id %}" method="POST">
-{% csrf_token %}
-<table border="1" >
-    <thead>
-        <tr>
-            <th colspan=2 >Latitude </th>
-            <th colspan=2 >Longitude </th>
-            <th colspan=2 >Unique_Squirrel_Id </th>
-            <th colspan=2 >Shift </th>
-            <th colspan=2 >Date </th>
-            <th colspan=2 >Age </th>
-            <th colspan=2 >Primary_Fur_Color </th>
-            <th colspan=2 >Location </th>
-            <th colspan=2 >Specific_Location </th>
-            <th colspan=2 >Running </th>
-            <th colspan=2 >Chasing </th>
-            <th colspan=2 >Climbing </th>
-            <th colspan=2 >Eating </th>
-            <th colspan=2 >Foraging </th>
-            <th colspan=2 >Other_Activities </th>
-            <th colspan=2 >Kuks </th>
-            <th colspan=2 >Quaas </th>
-            <th colspan=2 >Moans </th>
-            <th colspan=2 >Tail_flags </th>
-            <th colspan=2 >Tail_twitches </th>
-            <th colspan=2 >Approaches </th>
-            <th colspan=2 >Indifferent </th>
-            <th colspan=2 >Runs_from</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td colspan=2 ><input name="Latitude" value="{{ squirrel.Latitude }}"></input></td>
-            <td colspan=2 ><input name="Longitude" value="{{ squirrel.Longitude }}"></input></td>
-            <td colspan=2 ><input name="Unique_Squirrel_Id" value="{{ squirrel.Unique_Squirrel_Id }}"></input></td>
-            <td colspan=2 ><input name="Shift" value="{{ squirrel.Shift }}"></input></td>
-            <td colspan=2 ><input name="Date" value="{{ squirrel.Date | date:'Y-m-d' }}"></input></td>
-            <td colspan=2 ><input name="Age" value="{{ squirrel.Age }}"></input></td>
-            <td colspan=2 ><input name="Primary_Fur_Color" value="{{ squirrel.Primary_Fur_Color }}"></input></td>
-            <td colspan=2 ><input name="Location" value="{{ squirrel.Location }}"></input></td>
-            <td colspan=2 ><input name="Specific_Location" value="{{ squirrel.Specific_Location }}"></input></td>
-            <td colspan=2 ><input name="Running" value="{{ squirrel.Running }}"></input></td>
-            <td colspan=2 ><input name="Chasing" value="{{ squirrel.Chasing }}"></input></td>
-            <td colspan=2 ><input name="Climbing" value="{{ squirrel.Climbing }}"></input></td>
-            <td colspan=2 ><input name="Eating" value="{{ squirrel.Eating }}"></input></td>
-            <td colspan=2 ><input name="Foraging" value="{{ squirrel.Foraging }}"></input></td>
-            <td colspan=2 ><input name="Otder_Activities" value="{{ squirrel.Otder_Activities }}"></input></td>
-            <td colspan=2 ><input name="Kuks" value="{{ squirrel.Kuks }}"></input></td>
-            <td colspan=2 ><input name="Quaas" value="{{ squirrel.Quaas }}"></input></td>
-            <td colspan=2 ><input name="Moans" value="{{ squirrel.Moans }}"></input></td>
-            <td colspan=2 ><input name="Tail_flags" value="{{ squirrel.Tail_flags }}"></input></td>
-            <td colspan=2 ><input name="Tail_twitches" value="{{ squirrel.Tail_twitches }}"></input></td>
-            <td colspan=2 ><input name="Approaches" value="{{ squirrel.Approaches }}"></input></td>
-            <td colspan=2 ><input name="Indifferent" value="{{ squirrel.Indifferent }}"></input></td>
-            <td colspan=2 ><input name="Runs_from" value="{{ squirrel.Runs_from }}"></input></td>
-        </tr> 
-    </tbody>
-        
     </ul>
 {% else %}
     <p>No sightings are available.</p>
